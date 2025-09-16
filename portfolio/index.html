@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <!-- Add this inside your body, just after <body> -->
+<div class="sidebar-toggler">
+  ☰
+</div>
+
+
+    <div id="header">
+        <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+      <span class="material-symbols-rounded">menu</span>
+    </button>
+
+    <aside class="sidebar">
+      <!-- Sidebar Header -->
+      <header class="sidebar-header">
+        <a href="#" class="header-logo">
+          <img src="logo.png" alt="CodingNepal" />
+        </a>
+        <button class="sidebar-toggler">
+          <span class="material-symbols-rounded">chevron_left</span>
+        </button>
+      </header>
+
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">dashboard</span>
+              <span class="nav-label">Dashboard</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">person_raised_hand</span>
+              <span class="nav-label">About me</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">About me</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">local_library</span>
+              <span class="nav-label">Resources</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Resources</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span class="material-symbols-rounded">person_play</span>
+              <span class="nav-label">Project</span>
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+            </a>
+
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Project</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">Web Dev</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">Mobile App</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">ML/AI</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">analytics</span>
+              <span class="nav-label">Analytics</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Analytics</a></li>
+            </ul>
+          </li>
+
+           <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span class="material-symbols-rounded">frame_bug</span>
+              <span class="nav-label">Services</span>
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+            </a>
+
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Services</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">IT Consulting</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">Cloud Solutions</a></li>
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link">Mobile Apps</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">settings</span>
+              <span class="nav-label">Settings</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Secondary Bottom Nav -->
+        <ul class="nav-list secondary-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">help</span>
+              <span class="nav-label">Support</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Support</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">logout</span>
+              <span class="nav-label">Sign Out</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+        <div class="container">
+            <div class="header-text">
+                <p>Frontened Developer</p>
+                <h1>Hi, I'M <span>Anushka</span> from India</h1>
+                
+            </div>
+        </div>
+    </div>
+    <!--about me-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="20b20a1d-8337-4eee-b8ec-e8e741d314b9.jpg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I’m a Computer Science Student who loves solving problems in creative ways.
+                      For me, every bug in code feels like a puzzle waiting to be cracked.
+                      I enjoy taking real-world challenges whether it’s fixing a messy database, building smarter apps, or adding AI to
+                      everyday tasks and turning them into working solutions.
+                      Instead of just writing lines of code, I focus on writing logic that makes life easier.
+                      I believe problem-solving is not only about finding answers but also about asking the right questions.
+                      Sometimes, the smallest tweak in logic can feel like solving a big mystery, and I enjoy that thrill.
+                      With my mix of coding, curiosity, and creativity, I aim to create tools that are useful, simple, and a little bit
+                      exciting.
+                      Tech for me is not just a subject it’s the way I connect ideas to real impact.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontened</span><br>Designing Web/App Interfaces </li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Frontened project</span><br>used tools HTML, CSS,Javascript & React</li>
+                            <li><span> AI model for Phising Detection  </span><br>Machine learning algorithm , kaggle dataset , Evaluate and train model.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BTech in Computer Science in specialization with AI & ML</span><br>JBIET COLLEGE</li>
+                            <li><span>12th PCM </span><br>87%</li>
+                            <li><span>10th Schooling </span><br>86 %</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-list">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> I believe a great website is not just about functionalityit’s about creating a smooth, engaging, and visually
+                      appealing experience for users. My web design approach focuses on:
+                      Clean layouts with responsive designs that work perfectly on mobile and desktop.
+                      Modern UI/UX principles, making websites easy to navigate and user-friendly.
+                      Attention to detail, from typography and color choices to animations and interactivity.
+                      I enjoy blending creativity with coding to turn ideas into designs that are not only beautiful but also practical.</p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I bring UI/UX design into every project I work on—making sure my applications are not just functional
+                    but also engaging and easy to use. While building projects like my Amazon Clone and Spotify Clone, I focused on clean
+                    layouts,Even in AI-based projects like my Phishing Detection Model, I believe design plays a role—presenting results in a way
+                    that is clear, trustworthy, and user-friendly.
+                    My approach blends design thinking with coding skills in HTML, CSS, JavaScript, and React to deliver practical solutions
+                    that look good and work even better.</p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I enjoy designing apps that are not only functional but also user-friendly and visually appealing. My focus is on
+                      creating clean layouts, smooth navigation, and responsive designs that work seamlessly across devices.
+                      Through projects like my Weather Forecasting App, I designed simple dashboards that deliver real-time data in an
+                      easy-to-understand way. In my Spotify Clone and Amazon Clone, I explored interactive layouts and smooth UI flows to
+                      make the experience feel natural, just like real apps.
+                      For me, app design is about blending creativity, coding, and user experience—making sure every screen feels intuitive,
+                      modern, and impactful.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------ portfolio -------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-list">My Work</h1>
+            <!-- <div class="work-list">
+             <div class="work">
+                    <img src="image 4.webp">
+
+                </div>
+                 <div class="work">
+                    <img src="image 4.webp">
+
+                </div>
+                 <div class="work">
+                    <img src="image 4.webp">
+
+                </div>
+             </div> -->
+            <!-- slide for work portfolio -->
+            <div class="row">
+                <div class="work-col-1">
+                    <p style="margin-top: 20px;">I love turning ideas into interactive and intelligent web applications. Over time, I’ve
+                      worked on projects that challenged my creativity and coding skills.
+                     I built my Portfolio Website to showcase my journey in tech and make it easy for people to connect with me.
+                      I created an Amazon Clone, which sharpened my skills in UI design, product listing, and dynamic data handling.
+                      I developed a Spotify Clone, where I explored music streaming layouts and smooth user interactions.
+                      I built a Weather Forecasting App that integrates API's
+                      I designed a Phishing Detection AI Model, using machine learning techniques to classify and detect malicious websites,
+                      strengthening my expertise in AI-driven security solutions.
+                     Each of these projects represents my growth as a developer—mixing front-end design, backend logic, and AI concepts to
+                     build practical solutions. 
+                    </p>
+
+                   
+                    <div class="tab-title">
+                        <p class="tab-project-links active-project-links" onclick="opentabWork('Project 1')">Project 1</p>
+                        <p class="tab-project-links" onclick="opentabWork('Project 2')">Project 2</p>
+                        <p class="tab-project-links" onclick="opentabWork('Project 3')">Project 3</p>
+                    </div>
+                    <div class="tab-project-contents active-project-tab" id="Project 1">
+                        <ul>
+                            <li><span>Responsive Portfolio Website </span><br>HTML,CSS,Javascript </li>
+                            <li><span>Time Spent</span><br>24 Hours</li>
+                            <li><span>Deployed</span><br>Web Application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-project-contents" id="Project 2">
+                        <ul>
+                            <li><span>Stack used</span><br>Machine learning / Artificial Intelligence </li>
+                            <li><span>Time Spent</span><br> 72 Hours</li>
+                            <li><span>Deployed</span><br>Phishing Detection System for Email-spam</li>
+                        </ul>
+                    </div>
+                    <div class="tab-project-contents" id="Project 3">
+                        <ul>
+                            <li><span>Stack used</span><br>HTML,CSS,Javacript,React</li>
+                            <li><span>Time Spent</span><br>14 Hours</li>
+                            <li><span>Deployed</span><br>Web Application</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work-col-2">
+
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="1.jpg" alt="">
+                            <div class="layer">
+                                <h2>Code Development</h2>
+                                <p></p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="2.jpg" alt="">
+                            <div class="layer">
+                                <h2>Colab Work</h2>
+                                <p></p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="3.jpg" alt="">
+                            <div class="layer">
+                                <h2>Python Modules</h2>
+                                <p>.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="4.jpg" alt="">
+                            <div class="layer">
+                                <h2>Backend Rest API</h2>
+                                <p></p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://cdn.pixabay.com/photo/2024/02/05/10/51/web-development-8554218_1280.jpg"alt="">
+                            <div class="layer">
+                                <h2>Web Designing </h2>
+                                <p></p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="navigation">
+                            <i class="fas fa-chevron-left prev-btn"></i>
+                            <i class="fas fa-chevron-right next-btn"></i>
+                        </div>
+                        <div class="navigation-visibility">
+                            <div class="slide-icon active"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!---- contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- give your cv path here -->
+                    <a href="Simple-Resume.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input id="name" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
+                        <textarea id="message" name="Message" row="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" onclick="Submitform()" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+    
+</body>
+
+</html>
